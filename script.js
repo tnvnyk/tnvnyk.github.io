@@ -1,39 +1,46 @@
-// Minimalist Scroll & Navigation Handling
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');
 
-    // Smooth Scrolling for navigation links
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            window.scrollTo({
-                top: targetSection.offsetTop - 60,
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    // Active link highlighting on scroll
-    window.addEventListener('scroll', () => {
-        let current = '';
-
-        sections.forEach(section => {
+    // Handle Active Link on Scroll
+    const changeActiveNav = () => {
+        let current = "";
+        sections.forEach((section) => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - 70)) {
-                current = section.getAttribute('id');
+            if (pageYOffset >= sectionTop - 150) {
+                current = section.getAttribute("id");
             }
         });
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
+        navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+                link.classList.add("active");
             }
         });
+    };
+
+    window.addEventListener("scroll", changeActiveNav);
+
+    // Subtle Fade-in on Scroll (Optional Executive Transition)
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        section.style.opacity = "0";
+        section.style.transform = "translateY(10px)";
+        section.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+        observer.observe(section);
     });
 });
