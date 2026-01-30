@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Tanvi Nayak - Final Year Undergraduate focusing on Software Engineering and AI/ML.">
+    <title>Tanvi Nayak | Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">TANVI NAYAK</a>
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1 class="hero-name">Tanvi Nayak</h1>
+                <p class="hero-role">Final Year Undergraduate | Aspiring Software Engineer | AI/ML Enthusiast</p>
+                [cite_start]<p class="hero-statement">Applying rigorous mathematical foundations and machine learning research to build reliable, high-performance software systems[cite: 3, 69, 72].</p>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <div class="container">
+                <h2 class="section-title">Profile</h2>
+                <div class="profile-content">
+                    [cite_start]<p>I am a Mathematics and Computing undergraduate at the Indian Institute of Technology Dharwad with a CPI of 8.31/10[cite: 7, 72]. [cite_start]My background integrates core computer science principles—including data structures, operating systems, and computer architecture—with specialized research in online convex optimization and graph recovery algorithms[cite: 12, 15, 49, 115].</p>
+                    [cite_start]<p>I have demonstrated the ability to deliver peer-reviewed research, notably presenting at ICASSP 2025, while maintaining a focus on practical software implementation through system-level projects and machine learning applications[cite: 19, 59, 106].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section gray-bg">
+            <div class="container">
+                <h2 class="section-title">Selected Projects</h2>
+
+                <div class="project-card">
+                    [cite_start]<h3>ShellCC: Unix-like Shell [cite: 104]</h3>
+                    <div class="project-details">
+                        [cite_start]<p><strong>Problem:</strong> Managing concurrent processes and job control within a Linux environment requires precise low-level system call management[cite: 106, 108].</p>
+                        <p><strong>Approach:</strong> Implemented process management using fork, exec, and wait calls. [cite_start]Developed support for signal handling, I/O redirection, and pipelines to ensure robust execution flow[cite: 107, 108].</p>
+                        [cite_start]<p><strong>Outcome:</strong> Delivered a functional C-based shell capable of handling both foreground and background execution with stable signal processing[cite: 106, 107].</p>
+                        [cite_start]<p class="tech-stack">C, Linux, System Calls [cite: 104, 108]</p>
+                        <a href="https://github.com/tanvisnayak" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    [cite_start]<h3>Profiling MatMul: Optimization Analysis [cite: 27, 92]</h3>
+                    <div class="project-details">
+                        [cite_start]<p><strong>Problem:</strong> Standard parallel matrix multiplication often fails to utilize hardware caches effectively, leading to suboptimal execution times on high-performance GPUs[cite: 32, 97].</p>
+                        [cite_start]<p><strong>Approach:</strong> Profiled OpenCL-based kernels against CUDA implementations on an NVIDIA Quadro RTX 5000. Utilized cache-aware tiling to optimize memory access patterns[cite: 30, 31, 95, 96].</p>
+                        [cite_start]<p><strong>Outcome:</strong> Achieved a 2.8x speedup and a 64% reduction in execution time for 4k matrix sizes compared to non-tiled parallel implementations[cite: 32, 97].</p>
+                        [cite_start]<p class="tech-stack">C++, OpenCL, CUDA, nvidia-smi [cite: 27, 92]</p>
+                        <a href="https://github.com/tanvisnayak" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    [cite_start]<h3>Auburn Waves: Martian Terrain Classifier [cite: 22, 87]</h3>
+                    <div class="project-details">
+                        [cite_start]<p><strong>Problem:</strong> High-accuracy classification of Martian terrain is complicated by severe class imbalance across different geological features[cite: 23, 24].</p>
+                        <p><strong>Approach:</strong> Designed a CNN-based architecture trained on over 6,000 images. [cite_start]Employed upsampling techniques to address dataset skew and improve model generalization[cite: 23, 24, 88, 90].</p>
+                        [cite_start]<p><strong>Outcome:</strong> Achieved 92% test accuracy, representing a 2.2% improvement over the VGG-16 baseline model[cite: 25, 26, 89, 91].</p>
+                        [cite_start]<p class="tech-stack">Python, PyTorch, CNN [cite: 22, 87]</p>
+                        <a href="https://github.com/tanvisnayak" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    [cite_start]<h3>Segmentation on Medical Data [cite: 33]</h3>
+                    <div class="project-details">
+                        [cite_start]<p><strong>Problem:</strong> Medical image segmentation often suffers from "low-label" settings where annotated data is scarce[cite: 35].</p>
+                        <p><strong>Approach:</strong> Evaluated BiLAF and ActiveFT active finetuning strategies on the Synapse dataset. [cite_start]Analyzed feature-space coverage using PCA and class-frequency statistics[cite: 35, 37].</p>
+                        [cite_start]<p><strong>Outcome:</strong> Achieved a Dice score of 0.7 using only 10% of labels, effectively exploring the trade-off between annotation cost and model performance[cite: 36].</p>
+                        [cite_start]<p class="tech-stack">Python, PCA, Active Finetuning [cite: 33]</p>
+                        <a href="https://github.com/tanvisnayak" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skills-category">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            [cite_start]<li>Python [cite: 45, 110]</li>
+                            [cite_start]<li>C / C++ [cite: 45, 110]</li>
+                            [cite_start]<li>JavaScript [cite: 45, 110]</li>
+                            [cite_start]<li>SQL (MySQL) [cite: 48, 112]</li>
+                        </ul>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Software & Systems</h3>
+                        <ul>
+                            [cite_start]<li>Linux / Unix Shell [cite: 104, 106]</li>
+                            [cite_start]<li>Computer Architecture [cite: 57, 123]</li>
+                            [cite_start]<li>Operating Systems [cite: 56, 118]</li>
+                            [cite_start]<li>Socket Programming (TCP) [cite: 39, 100]</li>
+                        </ul>
+                    </div>
+                    <div class="skills-category">
+                        <h3>ML / AI</h3>
+                        <ul>
+                            [cite_start]<li>PyTorch / NumPy / Pandas [cite: 45, 110]</li>
+                            [cite_start]<li>Supervised & Unsupervised Learning [cite: 46, 111]</li>
+                            [cite_start]<li>Neural Networks (CNN, RNN, LSTM) [cite: 47, 111]</li>
+                            [cite_start]<li>Sparse Bayesian Learning [cite: 12, 77]</li>
+                        </ul>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Tools & Platforms</h3>
+                        <ul>
+                            [cite_start]<li>Git [cite: 48, 113]</li>
+                            [cite_start]<li>LaTeX [cite: 48, 113]</li>
+                            [cite_start]<li>OpenCL / CUDA [cite: 27, 30, 92, 95]</li>
+                            [cite_start]<li>Gradio [cite: 40, 101]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intent" class="section gray-bg">
+            <div class="container">
+                <h2 class="section-title">Objective</h2>
+                <div class="profile-content">
+                    <p>I am seeking early-career Software Engineering or Applied Scientist roles that provide exposure to real-world, large-scale systems. I value environments that prioritize technical discipline and provide strong mentorship, specifically within core software development or the intersection of systems and ML/AI.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="notes" class="section">
+            <div class="container">
+                <div class="notes-box">
+                    <p>I believe that the most impactful solutions emerge from a combination of theoretical curiosity and rigorous engineering discipline. Whether optimizing a matrix multiplication kernel or deriving regret bounds for online optimization, my goal remains the same: to build software that is both mathematically sound and functionally superior.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-links">
+                    [cite_start]<a href="mailto:tanvisnayak@gmail.com">tanvisnayak@gmail.com [cite: 68]</a>
+                    [cite_start]<a href="https://github.com/tanvisnayak" target="_blank">GitHub [cite: 2]</a>
+                    [cite_start]<a href="https://linkedin.com/in/tanvinayak" target="_blank">LinkedIn [cite: 2]</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tanvi Nayak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
